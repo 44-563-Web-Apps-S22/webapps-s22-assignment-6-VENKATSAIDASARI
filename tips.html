@@ -36,7 +36,7 @@
             <input type="radio" id="rd_3" name="**" value="exponent" onclick="chooseOp()">
             <label for="rd_3">**</label></br>
         </form>
-        <p id="radio_result" style="background-color:bisque;">The calculation is here </p>
+        <p id="radio_result" style="background-color:bisque;" class="btn btn-secondary">The calculation is here </p>
     <script> 
     function tips(){
                 amount=document.getElementById("check_amount").value
@@ -58,11 +58,11 @@
                     divide= document.getElementById("rd_2").checked
                     exponent= document.getElementById("rd_3").checked
                     if(exponent){
-                         document.getElementById('radio_result').innerHTML="(amount * Tip) value is:"+amount*tip
+                         document.getElementById('radio_result').innerHTML="(amount ** Tip) value is:"+amount**tip
                     }else if(times)
                     {  
                          document.getElementById('radio_result').innerHTML="(amount * Tip) value is:"+amount*tip
-                    }else if(divide)
+                    }else (divide)
                     {   
                         document.getElementById('radio_result').innerHTML="(amount / Tip) value is:"+amount/tip   
                     } }
